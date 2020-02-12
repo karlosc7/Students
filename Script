@@ -1,0 +1,14 @@
+show dbs;
+use Universidad;
+db.CreateCollection('Estudiantes');
+db.CreateCollection('Estudios');
+db.Estudents.insertMany(
+    [
+        { name: "Midhuna", age: 23, cars: [ "BMW 320d", "Audi R8" ], place:"Amaravati" },
+        { name: "Akhil", age: 24, cars: [ "Audo A7", "Agera R" ], place:"New York" },
+        { name: "Honey", age: 25, cars: [ "Audi R8" ] }
+    ]
+)
+db.Estudiantes.find().count();
+db.coleccion.find(filtro).sort(ordenacion);
+mongoClient.close()
